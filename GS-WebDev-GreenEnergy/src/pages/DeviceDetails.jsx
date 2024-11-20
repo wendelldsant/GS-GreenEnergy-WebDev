@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import dadosSimuladosRastreador from '../dados/circuito_simulacao.json'
 
 function DeviceDetails() {
+
+  const [dadosAleatorios, setDadosAleatorios] = useState('');
   const { id } = useParams();
   const [device, setDevice] = useState(null);
   const [apiData, setApiData] = useState([]);
   const [loading, setLoading] = useState(true);
   const APIkey = '7cb582f4b193ca52d9e0e433c5a0c616'
   useEffect(() => {
+    const obterDadosAleatoriosRastreador = () =>{
+      const indiceAleatorio = Math.floor(Math.random() * dadosSimuladosRastreador.length);
+      return dadosSimuladosRastreador[indiceAleatorio];
+    }
     const loginCheck = JSON.parse(localStorage.getItem('login_check'));
     if (loginCheck) {
       const deviceFound = (loginCheck.devices || []).find((dev) => dev.id === id);
@@ -31,9 +38,13 @@ function DeviceDetails() {
               setLoading(false);
             })
         }
-
+        const handleAtualizarDadosRastreador = () =>{
+          setDadosAleatorios(obterDadosAleatoriosRastreador());
+        };
         fetchApiData();
-        // const interval = setInterval(fetchapiData, 2000);
+        handleAtualizarDadosRastreador()
+
+        const interval = setInterval(handleAtualizarDadosRastreador, 2000);
 
         return () => { };
       }
@@ -103,18 +114,18 @@ function DeviceDetails() {
         <div className='mt-4 flex justify-around'>
           <div className='my-auto'>
             <p className="text-lg">
-              <strong className="font-semibold">Sensor Superior Esquerdo:</strong> 
+              <strong className="font-semibold">Sensor Superior Esquerdo:</strong>{dadosAleatorios.sensores.ldr_superior_esquerdo}
             </p>
             <p className="text-lg">
-              <strong className="font-semibold">Sensor Inferior Esquerdo:</strong> 
+              <strong className="font-semibold">Sensor Inferior Esquerdo:</strong>{dadosAleatorios.sensores.ldr_inferior_esquerdo}
             </p>
           </div>
           <div className='my-auto'>
             <p className="text-lg">
-              <strong className="font-semibold">Sensor Superior Direito:</strong> 
+              <strong className="font-semibold">Sensor Superior Direito:</strong>{dadosAleatorios.sensores.ldr_superior_direito} 
             </p>
             <p className="text-lg">
-              <strong className="font-semibold">Sensor Inferior Direito:</strong>
+              <strong className="font-semibold">Sensor Inferior Direito:</strong>{dadosAleatorios.sensores.ldr_inferior_direito}
             </p>
           </div>
         </div>
@@ -124,12 +135,12 @@ function DeviceDetails() {
         <div className='mt-4 flex justify-around'>
           <div className='my-auto'>
             <p className="text-lg">
-              <strong className="font-semibold">Motor Horizontal:</strong>° 
+              <strong className="font-semibold">Motor Horizontal:</strong>{dadosAleatorios.servos.servo_horizontal}° 
             </p>
           </div>
           <div className='my-auto'>
             <p className="text-lg">
-              <strong className="font-semibold">Motor Vertical:</strong>° 
+              <strong className="font-semibold">Motor Vertical:</strong>{dadosAleatorios.servos.servo_vertical}° 
             </p>
           </div>
         </div>

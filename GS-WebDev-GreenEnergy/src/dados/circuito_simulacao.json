@@ -1,0 +1,62 @@
+[
+    {
+        "sensores": {
+            "ldr_superior_esquerdo": 780,
+            "ldr_superior_direito": 950,
+            "ldr_inferior_esquerdo": 880,
+            "ldr_inferior_direito": 650
+        },
+        "servos": {
+            "servo_horizontal": 45,
+            "servo_vertical": 135
+        }
+    },
+    {
+        "sensores": {
+            "ldr_superior_esquerdo": 920,
+            "ldr_superior_direito": 900,
+            "ldr_inferior_esquerdo": 670,
+            "ldr_inferior_direito": 720
+        },
+        "servos": {
+            "servo_horizontal": 90,
+            "servo_vertical": 90
+        }
+    },
+    {
+        "sensores": {
+            "ldr_superior_esquerdo": 600,
+            "ldr_superior_direito": 650,
+            "ldr_inferior_esquerdo": 950,
+            "ldr_inferior_direito": 850
+        },
+        "servos": {
+            "servo_horizontal": 180,
+            "servo_vertical": 0
+        }
+    },
+    {
+        "sensores": {
+            "ldr_superior_esquerdo": 800,
+            "ldr_superior_direito": 950,
+            "ldr_inferior_esquerdo": 780,
+            "ldr_inferior_direito": 730
+        },
+        "servos": {
+            "servo_horizontal": 120,
+            "servo_vertical": 45
+        }
+    },
+    {
+        "sensores": {
+            "ldr_superior_esquerdo": 660,
+            "ldr_superior_direito": 800,
+            "ldr_inferior_esquerdo": 710,
+            "ldr_inferior_direito": 900
+        },
+        "servos": {
+            "servo_horizontal": 30,
+            "servo_vertical": 60
+        }
+    }
+]
