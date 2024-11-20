@@ -7,6 +7,7 @@ import Register from './pages/Register.jsx'
 import './index.css'
 import Home from './pages/Home.jsx'
 import DeviceDetails from './pages/DeviceDetails.jsx'
+import PageNotFound from './pages/PageNotFound.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { path: 'register', element: <Register /> },
       { path: 'profile', element: <Profile /> },
       { path: 'profile/:id', element: <DeviceDetails /> },
+      { path: '*', element: <PageNotFound /> }
     ],
   },
 ]);
