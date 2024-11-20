@@ -28,7 +28,10 @@ function DeviceDetails() {
           <span className="font-semibold">ID:</span> {device.id}
         </p>
         <p className="text-lg">
-          <span className="font-semibold">Região:</span> {device.region}
+          <span className="font-semibold">Latitude:</span> {device.latitude}
+        </p>
+        <p className="text-lg">
+          <span className="font-semibold">Longitude:</span> {device.latitude}
         </p>
       </section>
     </div>
