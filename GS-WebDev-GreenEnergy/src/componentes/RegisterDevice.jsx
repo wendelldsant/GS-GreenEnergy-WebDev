@@ -1,4 +1,5 @@
 function RegisterDevice({setDevices, devices, setNewDevice, newDevice, userOnline, setUserOnline}) {
+
     const handleAddDevice = () => {
         if (newDevice.id && newDevice.nickname && newDevice.latitude && newDevice.longitude) {
             const updatedDevices = [...devices, newDevice];
@@ -22,7 +23,7 @@ function RegisterDevice({setDevices, devices, setNewDevice, newDevice, userOnlin
         
         <section className="mb-8 p-6 bg-white rounded-lg shadow">
             <h2 className="text-2xl font-semibold text-gray-700">Cadastrar Novo Dispositivo</h2>
-            <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="mt-4 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6">
                 <input
                     type="text"
                     placeholder="ID do Dispositivo"

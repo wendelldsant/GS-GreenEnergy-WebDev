@@ -25,7 +25,7 @@ function DeviceCard({ devices, setDevices, userOnline, setUserOnline}) {
                 <p className="mt-4 text-gray-500">Nenhum dispositivo cadastrado.</p>
             ) : (
 
-                <div className="mt-4 space-y-4">
+                <div className="grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-6 mt-4">
                     {devices.map((device, index) => (
                         <div
                             key={index}

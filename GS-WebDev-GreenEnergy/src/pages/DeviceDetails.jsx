@@ -53,8 +53,8 @@ function DeviceDetails() {
   }, [id]);
 
 
-  if (!device) {
-    return <div>Dispositivo não encontrado.</div>;
+  if (!device || apiData!=true) {
+    return <div>Dispositivo não encontrado. Verifique os dados inseridos.</div>;
   }
 
   if (loading) {
