@@ -1,6 +1,15 @@
+import CardsHome from "../componentes/CardsHome";
+import FirstSection from "../componentes/FirstSectionHome";
+import dadosCards from "../dados/cardshome.json"
 function Home() {
     return ( 
-        <h1>Home</h1>
+        <section>
+            <FirstSection/>
+            <CardsHome dadosCards={dadosCards}/>
+
+        </section>
+
+
      );
 }
 
