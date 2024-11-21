@@ -9,7 +9,8 @@ function DeviceDetails() {
   const [device, setDevice] = useState(null);
   const [apiData, setApiData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const APIkey = '7cb582f4b193ca52d9e0e433c5a0c616'
+  const APIkey = import.meta.env.VITE_API_KEY;
+
   useEffect(() => {
     const obterDadosAleatoriosRastreador = () =>{
       const indiceAleatorio = Math.floor(Math.random() * dadosSimuladosRastreador.length);
@@ -53,7 +54,7 @@ function DeviceDetails() {
   }, [id]);
 
 
-  if (!device || apiData!=true) {
+  if (!device) {
     return <div>Dispositivo não encontrado. Verifique os dados inseridos.</div>;
   }
 

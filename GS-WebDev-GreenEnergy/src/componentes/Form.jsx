@@ -94,7 +94,7 @@ function Forms() {
                 <StandardModal 
                     handleCloseModal={handleCloseModal}
                     atributes={{
-                        title: "Seja bem-vindo ao Emotion-Grid!",
+                        title: "Seja bem-vindo!",
                         text: 'Cadastro efetuado com sucesso!', 
                         cancelName: "Conheça nossa plataforma",
                     }}
