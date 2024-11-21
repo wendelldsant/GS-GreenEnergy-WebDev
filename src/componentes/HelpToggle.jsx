@@ -1,7 +1,7 @@
 function HelpToggle({ texto }) {
     return (
         <div
-            className="absolute right-3 group flex justify-center transition-all rounded-full bg-gray-200 p-1 cursor-pointer"
+            className="absolute right-3 group flex justify-center transition-all rounded-full bg-gray-200 p-1 cursor-pointer z-10"
         >
             <svg viewBox="0 0 320 512" className="w-4 h-4">
                 <path
@@ -9,7 +9,7 @@ function HelpToggle({ texto }) {
                 ></path>
             </svg>
             <span
-                className="absolute w-48 opacity-0 group-hover:opacity-100 lg:group-hover:translate-x-40 lg:group-hover:translate-y-0 group-hover:translate-y-10 group-hover:-translate-x-24  duration-1000 text-sm bg-gray-100 p-2 rounded-lg text-balance"
+                className="absolute w-48 opacity-0 group-hover:opacity-100 lg:group-hover:translate-x-40 lg:group-hover:translate-y-0 group-hover:translate-y-10 group-hover:-translate-x-24  duration-1000 text-sm bg-gray-100 p-2 rounded-lg text-balance z-20"
             >
                 <strong>{texto}</strong>
             </span>

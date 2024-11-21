@@ -9,7 +9,7 @@ import InputRegisterForm from "./InputRegisterForm";
 function Forms() {
     const navigate = useNavigate();
     const helpTexts = {
-        senha: 'Sua senha deve conter pelo menos: um número, uma letra maiúscula, uma letra minúscula, 7 caracteres',
+        senha: 'Sua senha deve conter pelo menos: um número, uma letra maiúscula, uma letra minúscula, 7 caracteres, um caracter especial',
         username_text: 'Seu nome de usuário não pode conter menos de 5 caracteres'
     };
 
