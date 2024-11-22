@@ -1,7 +1,7 @@
 function Problema() {
     return ( 
         <>
-            <div className="flex items-center mb-10 mt-24 h-screen">
+            <div className="flex items-center mb-10 mt-24 min-h-screen">
                 <div className="w-full gap-32 my-10 flex flex-col sm:flex-row justify-between items-center px-8 sm:px-12 lg:px-16">
                     <div className="uppercase text-center sm:text-left text-balance sm:flex-shrink-0 sm:w-1/3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light">
                         <h3>Energia Limpa: A Revolução que o Planeta Precisa</h3>

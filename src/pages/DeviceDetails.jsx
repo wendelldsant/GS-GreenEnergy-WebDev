@@ -67,7 +67,7 @@ function DeviceDetails() {
       <header className="col-span-4 mb-8 text-center">
         <h1 className="text-3xl font-bold text-orange-600">Monitoramento - Sun Catcher - {device.nickname}</h1>
       </header>
-      <section className="lg:col-span-2 col-span-4 p-6 bg-white rounded-lg shadow">
+      <section className="lg:col-span-2 col-span-4 p-6 rounded-lg shadow bg-yellow-300">
         <h2 className="text-center text-xl font-semibold text-gray-700">Informações do Dispositivo</h2>
         <div className='flex justify-around'>
           <div className='my-auto'>
@@ -88,7 +88,7 @@ function DeviceDetails() {
           </div>
         </div>
       </section>
-      <section className="lg:col-span-2 col-span-4 p-6 bg-white rounded-lg shadow flex flex-col">
+      <section className="lg:col-span-2 col-span-4 p-6 rounded-lg shadow flex flex-col bg-yellow-300">
         <h2 className="text-xl text-center font-semibold text-gray-700">Clima Local</h2>
         <div className='mt-4 flex justify-around'>
           <img src={apiData?.weather[0]?.icon ? `https://openweathermap.org/img/wn/${apiData.weather[0].icon}@2x.png` : ''} alt="Icone Condição Climática" />
@@ -110,7 +110,7 @@ function DeviceDetails() {
           </div>
         </div>
       </section>
-      <section className="lg:col-span-2 col-span-4 p-6 bg-white rounded-lg shadow flex flex-col">
+      <section className="lg:col-span-2 col-span-4 p-6 rounded-lg shadow flex flex-col bg-yellow-300">
         <h2 className="text-xl text-center font-semibold text-gray-700">Luminosidade</h2>
         <div className='mt-4 flex justify-around'>
           <div className='my-auto'>
@@ -131,7 +131,7 @@ function DeviceDetails() {
           </div>
         </div>
       </section>
-      <section className="lg:col-span-2 col-span-4 p-6 bg-white rounded-lg shadow flex flex-col">
+      <section className="lg:col-span-2 col-span-4 p-6 rounded-lg shadow flex flex-col bg-yellow-300">
         <h2 className="text-xl text-center font-semibold text-gray-700">Posição Angular</h2>
         <div className='mt-4 flex justify-around'>
           <div className='my-auto'>

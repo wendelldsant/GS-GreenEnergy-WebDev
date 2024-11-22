@@ -1,7 +1,7 @@
-Sunny Tracker
+Sun Catcher
 Wendell dos Santos Silva (RM558859)
 
-Sunny Tracker é uma plataforma de rastreamento e otimização de sistemas de painéis solares, desenvolvida com o objetivo de melhorar a eficiência dos sistemas de energia solar. O projeto foi criado para a Global Solution, com foco em energia limpa (green energy).
+Sun Catcher é uma plataforma de rastreamento e otimização de sistemas de painéis solares, desenvolvida com o objetivo de melhorar a eficiência dos sistemas de energia solar. O projeto foi criado para a Global Solution, com foco em energia limpa (green energy).
 
 Este projeto permite que os usuários se cadastrem, registrem seus rastreadores solares adquiridos e visualizem os dados fictícios dos sensores de clima e localizados de rastreadores solares, com base em informações de latitude e longitude.
 
