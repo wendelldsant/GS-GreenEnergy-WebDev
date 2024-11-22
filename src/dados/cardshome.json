@@ -2,17 +2,17 @@
     {
         "title": "Painéis Solares",
         "text": "Integramos nossos dispositivos com seu painel solar, enviando as melhores posições para maior eficiencia",
-        "imagem": "./tecnologias/paineis-solares.jpg"
+        "imagem": "./painel-solar.jpg"
     },
     {
-        "title": "Cadastre seu Dispositivo",
-        "text": "Cadastre seu Sun Catcher instalado em nossa plataforma e acompanhe em tempo real seu funcionamento.",
-        "imagem": "./tecnologias/carro-eletrico-carregando.jpg"
+        "title": "Monitore seu Dispositivo",
+        "text": "Após fazer seu cadastro, registre seu Sun Catcher instalado em nossa plataforma e acompanhe em tempo real seu funcionamento.",
+        "imagem": "./rastreador-solar.jpg"
     },
     {
         "title": "Eficiencia",
         "text": "Deixe a responsabilidade de analisar dados para nosso rastreador, maximizando a eficiencia do seu sistema!",
-        "imagem": "./tecnologias/parque-solar-noor.jpg"
+        "imagem": "./sistema-energia-solar.jpg"
     }
     
 ]
