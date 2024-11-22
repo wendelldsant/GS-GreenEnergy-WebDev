@@ -1,45 +1,77 @@
-Sun Catcher
-Wendell dos Santos Silva (RM558859)
+# 🌞 **Sun Catcher**  
+**Autor:** Wendell dos Santos Silva (RM558859)  
 
-Sun Catcher é uma plataforma de rastreamento e otimização de sistemas de painéis solares, desenvolvida com o objetivo de melhorar a eficiência dos sistemas de energia solar. O projeto foi criado para a Global Solution, com foco em energia limpa (green energy).
+---
 
-Este projeto permite que os usuários se cadastrem, registrem seus rastreadores solares adquiridos e visualizem os dados fictícios dos sensores de clima e localizados de rastreadores solares, com base em informações de latitude e longitude.
+## 📖 **Sobre o Projeto**  
+**Sun Catcher** é uma plataforma de rastreamento e otimização de sistemas de painéis solares, desenvolvida com o objetivo de melhorar a eficiência dos sistemas de energia solar.  
+O projeto foi criado para a **Global Solution**, com foco em **energia limpa** (green energy).  
 
-Funcionalidades
-Cadastro de usuário: O usuário pode criar uma conta e acessar seu perfil.
+### O que o projeto oferece?  
+- Cadastro de usuários e rastreadores solares.  
+- Exibição de dados fictícios de sensores climáticos.  
+- Informações baseadas em localização (latitude e longitude).  
 
-Cadastro de rastreador solar: O usuário pode adicionar os dados do rastreador solar adquirido, incluindo a latitude e longitude.
-Exemplo de localização: Para facilitar a avaliação, é possível usar os dados de latitude e longitude de São Paulo:
-Latitude: -23.5505
-Longitude: -46.6333
+---
 
-Visualização de dados: O sistema exibe dados fictícios dos sensores do rastreador solar, baseados nas informações de clima obtidas via API da OpenWeather.
+## ⚙️ **Funcionalidades**  
 
-Interface responsiva: Desenvolvido com React e Tailwind CSS, proporcionando uma interface amigável e adaptável a diferentes dispositivos.
+1. **Cadastro de Usuário:**  
+   - Permite ao usuário criar uma conta e acessar seu perfil.  
 
-Tecnologias Utilizadas
-React: Para construção da interface do usuário.
-Tailwind CSS: Para estilização rápida e flexível.
-Vite: Para otimização do desenvolvimento e construção da aplicação.
-API da OpenWeather: Para integrar dados climáticos e fornecer informações atualizadas sobre o clima nas localidades dos usuários.
-Acesse o Projeto
-O projeto está disponível online em:
-(https://gs-green-energy-suncatcher-webdev.vercel.app/)
+2. **Cadastro de Rastreadores Solares:**  
+   - Registro de dispositivos com latitude e longitude.  
+   - **Exemplo de localização:**  
+     - **Latitude:** `-23.5505`  
+     - **Longitude:** `-46.6333` (São Paulo).  
 
-Como Rodar o Projeto
-Clone o repositório:
-git clone https://github.com/wendelldsant/GS-GreenEnergy-WebDev
+3. **Visualização de Dados:**  
+   - Exibição de dados fictícios baseados em informações climáticas obtidas via API da OpenWeather.  
 
-Instale as dependências:
-cd gs-greenenergy-webdev
-npm install
+4. **Interface Responsiva:**  
+   - Design adaptável e amigável, desenvolvido com **React** e **Tailwind CSS**.  
 
-Execute o servidor de desenvolvimento:
-npm run dev
+---
 
-Contribuições
-Este projeto foi desenvolvido individualmente por Wendell dos Santos Silva (RM558859). O objetivo é aprimorar a eficiência dos sistemas de energia solar, proporcionando uma plataforma simples para visualizar dados em tempo real relacionados ao desempenho dos rastreadores solares.
+## 💻 **Tecnologias Utilizadas**  
 
-License
+- **React:** Para construção da interface do usuário.  
+- **Tailwind CSS:** Para estilização rápida e flexível.  
+- **Vite:** Para otimização do desenvolvimento e construção da aplicação.  
+- **API da OpenWeather:** Para integrar dados climáticos atualizados com base na localização do rastreador.  
+
+---
+
+## 🌐 **Acesse o Projeto**  
+O projeto está disponível online em:  
+[Sun Catcher - Plataforma Online](https://gs-green-energy-suncatcher-webdev.vercel.app/)  
+
+---
+
+## 🚀 **Como Rodar o Projeto**  
+
+1. **Clone o repositório:**  
+   - git clone https://github.com/wendelldsant/GS-GreenEnergy-WebDev
+  
+
+2. **Instale as dependências**:
+  - cd gs-greenenergy-webdev
+  - npm install
+
+3. Execute o servidor de desenvolvimento:
+  - Copiar código
+  - npm run dev
+
+---
+
+## 🤝 **Contribuições**
+- Este projeto foi desenvolvido individualmente por Wendell dos Santos Silva (RM558859), com o objetivo de aprimorar a eficiência dos sistemas de energia solar.
+
+---
+
+## 📜 **Licença**
 Este projeto está licenciado sob a MIT License.
 
+---
+
+Desenvolvido com dedicação e energia limpa! 🌱
