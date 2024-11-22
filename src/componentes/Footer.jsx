@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MdEnergySavingsLeaf } from "react-icons/md";
+import { CiSun } from "react-icons/ci";
+
 
 export default function Footer(){
   return (
@@ -9,7 +10,7 @@ export default function Footer(){
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-8 md:mb-0">
                 <Link to="/" aria-label="Motion-Grid" title="Motion-Grid" className="inline-flex items-center lg:mx-auto">
-                        <MdEnergySavingsLeaf className="w-8 h-8 text-white" />
+                        <CiSun className="w-8 h-8 text-white" />
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
                           SunCatcher
                         </span>

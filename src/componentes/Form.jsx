@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import HelpToggle from "./HelpToggle";
 import * as registerFunction from '../functions/register-functions';
 import Buttons from "./Buttons";
 import { useNavigate } from 'react-router-dom';
@@ -96,7 +95,7 @@ function Forms() {
                     atributes={{
                         title: "Seja bem-vindo!",
                         text: 'Cadastro efetuado com sucesso!', 
-                        cancelName: "Conheça nossa plataforma",
+                        cancelName: "Conheça nossa plataforma"
                     }}
                     
                 />

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"; 
+import { CiBookmarkCheck } from "react-icons/ci";
 
 function StandardModal({ handleCloseModal, atributes, handlePurchase }) {
   return (
@@ -6,7 +7,7 @@ function StandardModal({ handleCloseModal, atributes, handlePurchase }) {
       <div className="max-w-xl w-full mx-auto bg-gray-900 rounded-xl overflow-hidden z-10">
         <div className="max-w-md mx-auto pt-12 pb-14 px-5 text-center">
           <div className="inline-flex items-center justify-center w-12 h-12 mb-5 rounded-full">
-            <img src={atributes.image} alt="Modal Icon" className="w-12 h-12" />
+          <CiBookmarkCheck className="w-12 h-12 text-green-500"/>  
           </div>
           <h4 className="text-xl text-gray-100 font-semibold mb-5">
             {atributes.title}
@@ -22,19 +23,6 @@ function StandardModal({ handleCloseModal, atributes, handlePurchase }) {
           >
             {atributes.cancelName}
           </button>
-          {atributes.confirmName && (
-            typeof atributes.confirmName === 'string' ? (
-              <button 
-                onClick={handlePurchase}
-                className="inline-block w-full sm:w-auto py-3 px-5 mb-2 text-center font-semibold leading-6 text-blue-50 bg-green-500 hover:bg-green-600 rounded-lg transition duration-200">
-                {atributes.confirmName}
-              </button>
-            ) : (
-              <div className="inline-block w-full sm:w-auto mb-2 text-center">
-                {atributes.confirmName} 
-              </div>
-            )
-          )}
         </div>
       </div>
     </div>
