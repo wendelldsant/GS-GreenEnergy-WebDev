@@ -110,7 +110,7 @@ function DeviceDetails() {
           </div>
         </div>
       </section>
-      <section className="lg:col-span-2 sm:col-span-1 p-6 bg-white rounded-lg shadow flex flex-col">
+      <section className="lg:col-span-2 col-span-4 p-6 bg-white rounded-lg shadow flex flex-col">
         <h2 className="text-xl text-center font-semibold text-gray-700">Luminosidade</h2>
         <div className='mt-4 flex justify-around'>
           <div className='my-auto'>
@@ -131,7 +131,7 @@ function DeviceDetails() {
           </div>
         </div>
       </section>
-      <section className="lg:col-span-2 sm:col-span-1 p-6 bg-white rounded-lg shadow flex flex-col">
+      <section className="lg:col-span-2 col-span-4 p-6 bg-white rounded-lg shadow flex flex-col">
         <h2 className="text-xl text-center font-semibold text-gray-700">Posição Angular</h2>
         <div className='mt-4 flex justify-around'>
           <div className='my-auto'>
