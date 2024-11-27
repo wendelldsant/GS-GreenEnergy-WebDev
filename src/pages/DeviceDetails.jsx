@@ -54,7 +54,7 @@ function DeviceDetails() {
   }, [id]);
 
 
-  if (!device) {
+  if (!device || device==0) {
     return <div>Dispositivo não encontrado. Verifique os dados inseridos.</div>;
   }
 
