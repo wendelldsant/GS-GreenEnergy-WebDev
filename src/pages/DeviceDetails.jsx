@@ -37,12 +37,14 @@ function DeviceDetails() {
             .catch((error) => {
               console.error("Erro ao buscar dados na API: ", error);
               setLoading(false);
+              
             })
         }
         const handleAtualizarDadosRastreador = () =>{
           setDadosAleatorios(obterDadosAleatoriosRastreador());
         };
         fetchApiData();
+
         handleAtualizarDadosRastreador()
 
         const interval = setInterval(handleAtualizarDadosRastreador, 2000);
@@ -54,12 +56,13 @@ function DeviceDetails() {
   }, [id]);
 
 
-  if (!device || device==0) {
-    return <div>Dispositivo não encontrado. Verifique os dados inseridos.</div>;
+  if (!device || apiData.length == 0) {
+    return <div className='flex justify-center'>Dispositivo não encontrado. Verifique os dados inseridos.</div>;
   }
 
   if (loading) {
     return <div>Carregando dados...</div>;
+
   }
 
   return (
@@ -97,7 +100,7 @@ function DeviceDetails() {
               <strong className="font-semibold">Cidade:</strong> {apiData?.name ?? 'Erro ao localizar cidade'}  {/*verificação incluida porque essa função foi descontinuada pela API*/}
             </p>
             <p className="text-lg">
-              <strong className="font-semibold">Descrição:</strong> {apiData.weather[0].description}
+              <strong className="font-semibold">Descrição:</strong> {apiData?.weather[0].description}
             </p>
           </div>
           <div className='my-auto'>
